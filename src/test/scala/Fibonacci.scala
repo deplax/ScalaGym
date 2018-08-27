@@ -1,6 +1,10 @@
+// https://github.com/fpinscala/fpinscala
+
 object Fibonacci {
 
   def fib(n: Int) = {
+
+    @annotation.tailrec
     def go(first: Int, second: Int, count: Int): Int = {
       if (count < 0)
         first
